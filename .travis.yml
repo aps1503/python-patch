@@ -18,6 +18,7 @@ install:
   - pip install pypack
 
 script:
+  - lscpu
   # run tests with coverage
   - coverage run tests/run_tests.py
   - coverage report -m
