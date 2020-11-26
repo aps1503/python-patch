@@ -20,7 +20,7 @@ install:
 script:
   - lscpu
   # run tests with coverage
-  - coverage run tests/run_tests.py
+  - coverage run tests/run_tests.py -n8
   - coverage report -m
   # test distribution packaging
   - python -m pypack patch.py
