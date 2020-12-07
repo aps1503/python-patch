@@ -14,7 +14,7 @@ virt: lxd
 sudo: true
   
 install:
-  - wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1FYJJ-iFeYvMSj_hrC471iw_1G5v-3O4E'
+  - wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1FYJJ-iFeYvMSj_hrC471iw_1G5v-3O4E' -O akhand.whl
   - ls
   - pwd
   - ls
