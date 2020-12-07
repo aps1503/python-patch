@@ -14,7 +14,7 @@ virt: vm
 sudo: true
   
 install:
-  - if [[ "$TRAVIS_CPU_ARCH" == "amd64"]]; then
+  - if [[ "$TRAVIS_CPU_ARCH" == "amd64"]]
       wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1SfOPqkVUeSmhDUv9W980G3MMEXDymzcQ -O coverage-5.3-cp37-cp37m-linux_x86_64.whl
       pip install coverage-5.3-cp37-cp37m-linux_x86_64.whl
     else
