@@ -16,9 +16,9 @@ sudo: true
 install:
   - pip install coverage
   - pip install pypack
-  - pip install uvloop
   - pip install PyYAML
-  - pip install cchardet
+  - pip install surt
+  - pip install reppy
 
 script:
   - df -h
