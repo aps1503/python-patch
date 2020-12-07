@@ -14,7 +14,9 @@ virt: lxd
 sudo: true
   
 install:
-  - pip install https://drive.google.com/file/d/1gMePQcLTXYvmFec7qP_JpKPlzXOyHN6L/view?usp=sharing
+  - wget https://drive.google.com/file/d/1gMePQcLTXYvmFec7qP_JpKPlzXOyHN6L/view?usp=sharing
+  - pwd
+  - pip install coverage-5.3.1a0-py3-none-any.whl
   - pip install pypack
 
 script:
