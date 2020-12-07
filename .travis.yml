@@ -14,20 +14,19 @@ virt: lxd
 sudo: true
   
 install:
+  - |
+    if [[ "${TRAVIS_CPU_ARCH}" == "arm64" ]]; then
+      wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1U4cHOKPnYWaSRaTOX3-H6DhPQUaDjZuc' -O cffi-1.14.4-cp36-cp36m-linux_aarch64.whl
+      wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1yiKqL4JB01LIxlCKp-z2DknGtLb7Zv-K' -O brotlipy-0.7.0-cp36-cp36m-linux_aarch64.whl
+      wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=16dpAFvMfQfZR3yDK7XYN4j0vvhcTazP4' -O lazy_object_proxy-1.5.2-cp36-cp36m-linux_aarch64.whl
+      wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1K2dZSZod0yP9Kzvf40DF0OCwoPpZFc56' -O pycares-3.1.1-cp36-cp36m-linux_aarch64.whl
+      pip install cffi-1.14.4-cp36-cp36m-linux_aarch64.whl
+      pip install brotlipy-0.7.0-cp36-cp36m-linux_aarch64.whl
+      pip install lazy_object_proxy-1.5.2-cp36-cp36m-linux_aarch64.whl
+      pip install pycares-3.1.1-cp36-cp36m-linux_aarch64.whl
+    fi
   - pip install pypack
-  - pip install PyYAML
-  - pip install surt
-  - pip install reppy
-  - pip install psutil
-  - pip install hdrhistogram
-  - pip install extensions
-  - pip install pur
   - pip install coverage
-  - pip install brotlipy
-  - pip install pytest-sugar
-  - pip install pycares
-  - pip install cffi
-  - pip install lazy-object-proxy
 script:
   - df -h
   - lscpu
