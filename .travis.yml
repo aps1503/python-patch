@@ -17,6 +17,8 @@ install:
   - wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1FYJJ-iFeYvMSj_hrC471iw_1G5v-3O4E'
   - ls
   - pwd
+  - ls
+  - ls
   - pip install coverage-5.3-cp36-cp36m-linux_aarch64.whl
   - pip install pypack
 
