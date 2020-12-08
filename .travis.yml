@@ -8,9 +8,9 @@ arch:
   - arm64
   - arm64-graviton2
  
-dist: xenial
+dist: focal
 group: edge
-virt: lxd
+virt: vm
 sudo: true
   
 install:
