@@ -10,7 +10,7 @@ arch:
   - arm64
   - arm64-graviton2
  
-dist: xenial
+dist: bionic
 group: edge
 virt: lxd
 sudo: true
